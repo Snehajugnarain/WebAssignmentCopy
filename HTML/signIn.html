@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/CSS/signIn.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="name">Desi Elegance</div>
+
+     
+
+        <div class="logo">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="user-dropdown-container">
+                <i class="fa-solid fa-user"></i>
+                <div class="user-dropdown">
+                    <a href="/HTML/signIn.html">Sign In</a>
+                    <a href="/HTML/signUp.html">Sign Up</a>
+                </div>
+            </div>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <div class="top">
+        <p>Log In</p>
+    </div>
+
+    <div class="account-details">
+        <div class="personal-information">
+            <p>PERSONAL INFORMATION</p>
+        </div>
+
+        <form id="form" class="form" action="signIn.html" method="post">
+            <input class="contact" type="text" id="email" name="email" placeholder="Email">
+            <span style="color: red;" id="emailError"></span>
+
+            <input class="contact" type="password" id="password" name="password" placeholder="Password">
+            <span style="color: red;" id="passwordError"></span>
+
+            <div class="pass">
+                <input type="checkbox" id="show-password" name="show-password" onclick="showPassword()">
+                <label for="show-password">Show Password</label>
+            </div>
+
+            <div class="btn">
+                <a href="HTML/home.html" class="back-btn">Home</a>
+                <button type="submit" name="submit" class="create-btn">Log In</button>
+            </div>
+
+            <div>
+                <p>Do not have an account?<br> <a href="HTML/signUp.html">Register now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="/JAVASCRIPT/validateSignIn.js"></script>
+</body>
+
+</html>

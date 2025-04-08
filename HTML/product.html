@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+<body>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="/men section/men section/Kurta 2/Cotton Stylist Kurta/image_zoom (3).jpeg" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="/men section/men section/Kurta 2/Cotton Stylist Kurta/image_zoom (3).jpeg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/men section/men section/Kurta 2/Cotton Stylist Kurta/image_zoom (3)_processed.jpeg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/men section/men section/Kurta 2/Cotton Stylist Kurta/image_zoom.jpeg" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="/men section/men section/Kurta 2/Cotton Stylist Kurta/image_zoom_processed (1).jpeg" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h2>Kurta</h2>
+                <h4>Rs 559</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>SMALL</option>
+                    <option>MEDIUM</option>
+                    <option>LARGE</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btnR">Add to cart</a>
+                <h3>Product Details<i class="fa fa-indent"></i></h3>
+                <br>
+                <p>This exquisite kurta is crafted from soft, breathable cotton, featuring intricate hand-embroidered detailing along the neckline and sleeves. Perfect for festive occasions or casual outings, its vibrant color palette and comfortable fit make it a must-have addition to your wardrobe.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImgs = document.getElementsByClassName("small-img");
+    
+        for (var i = 0; i < smallImgs.length; i++) {
+            smallImgs[i].onclick = function() {
+                productImg.src = this.src;
+            }
+        }
+    </script>
+</body>
+</html>

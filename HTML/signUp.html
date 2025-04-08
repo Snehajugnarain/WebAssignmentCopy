@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/CSS/signUp.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+<body>
+<header>
+    <div class="name">Desi Elegance</div>
+
+    
+
+    <div class="logo">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="user-dropdown-container">
+            <i class="fa-solid fa-user"></i>
+            <div class="user-dropdown">
+                <a href="HTML/signIn.html">Sign In</a>
+                <a href="HTML/signUp.html">Sign Up</a>
+            </div>
+        </div>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+</header>
+
+<div class="top">
+    <p>Create New Customer Account</p>
+</div>
+
+<div class="account-details">
+    <div class="personal-information">
+        <p>PERSONAL INFORMATION</p>
+    </div>
+
+    <form id="form" class="form" method="post">
+        <input class="contact" type="text" id="fname" name="fname" placeholder="First Name">
+        <span style="color: red;" id="fnameError"></span>
+
+        <input class="contact" type="text" id="lname" name="lname" placeholder="Last Name">
+        <span style="color: red;" id="lnameError"></span>
+
+        <input class="contact" type="text" id="email" name="email" placeholder="Email">
+        <span style="color: red;" id="emailError"></span>
+
+        <input class="contact" type="text" id="phone" name="phone" placeholder="Mobile Number">
+        <span style="color: red;" id="phoneError"></span>
+
+        <input class="contact" type="password" id="password" name="password" placeholder="Password">
+        <span style="color: red;" id="passwordError"></span>
+
+        <input class="contact" type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm Password">
+        <span style="color: red;" id="confirmPasswordError"></span>
+
+        <div class="pass">
+            <input type="checkbox" id="show-password" name="show-password" onclick="showPassword()">
+            <label for="show">Show Password</label>
+        </div>
+
+        <div class="btn">
+            <a href="HTML/home.html" class="back-btn">Home</a>
+            <button type="submit" name="submit" class="create-btn">Create Account</button>
+        </div>
+    </form>
+</div>
+
+<script src="/JAVASCRIPT/validateSignUp.js"></script>
+</body>
+</html>
